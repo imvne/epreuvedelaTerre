@@ -11,3 +11,5 @@ elsif divisible.is_a? Float
 else
    puts "Tu ne me la mettra pas à l'envers"
 end
+
+# idée de base mais pas possible car ruby interprète l'élément donnée dans le terminal comme une chaine de caractères, même si c'est un nombre

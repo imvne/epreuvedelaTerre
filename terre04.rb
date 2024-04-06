@@ -1,15 +1,14 @@
 # Pair ou impair ?
 
-nombre = gets.chomp
+input = gets.chomp                                  # variable contenant l'élément entré dans le terminal par l'utilisateur
 
-divisible = nombre / 2
-
-if divisible.is_a? Integer
-   puts "pair"
-elsif divisible.is_a? Float
-   puts "impair"
-else
-   puts "Tu ne me la mettra pas à l'envers"
+if  input.match?(/^-?\d+$/)                         # si l'élément entré est un nombre entier, négatif ou non 
+    nombre = input.to_i                             # transforme la chaine de caractères en un integer
+    if nombre % 2 == 0                              # si la divison nombre / 2 à pour reste 0
+        puts "pair"                                 # alors affiche que c'est un nombre pair
+    else
+        puts "impair"                               # sinon affiche que c'est un nombre impair
+    end
+else                                                # si l'élément entré n'est pas un nombre entier, négatif ou non 
+    puts "Tu ne me la mettra pas à l'envers"        # alors affiche ceci
 end
-
-# idée de base mais pas possible car ruby interprète l'élément donnée dans le terminal comme une chaine de caractères, même si c'est un nombre

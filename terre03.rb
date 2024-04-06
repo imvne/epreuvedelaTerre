@@ -1,14 +1,17 @@
 # L'alphabet à partir de
 
-lettre = gets.chomp                              # variable contenant la lettre entrée dans le terminal par l'utilisateur
+input = gets.chomp                               # variable contenant la lettre entrée dans le terminal par l'utilisateur
+
+lettre = input.downcase                          # met la lettre en minuscule si elle a été entrée en majuscule
 
 print lettre                                     # affiche la lettre entrée
-print lettre.succ                                # imprime la lettre suivante
 
-
+unless lettre == "z"                             # à moins que la lettre entrée soit z (pas de suite)
 begin 
-    lettre = lettre.succ               # à chaque tour de la boucle on remplacera le contenu de la variable par la lettre suivante de l'alphabet
-    print lettre.succ                  # à chaque tour de la boucle on affiche la lettre suivante de la dernière lettre suivante
-end while lettre.succ != "z"         # on continue la boucle tant que la lettre suivante n'est pas z
+    lettre = lettre.succ                         # à chaque tour de la boucle on remplacera le contenu de la variable lettre par la lettre suivante de l'alphabet
+    print lettre                                 # à chaque tour de la boucle on affiche la lettre suivante
 
-print "\n"                             # revient à la ligne
+end while lettre != "z"                          # on continue la boucle tant que la dernière lettre affichée n'est pas z    
+end
+
+print "\n"                                       # revient à la ligne

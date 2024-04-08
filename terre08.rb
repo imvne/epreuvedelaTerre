@@ -21,4 +21,4 @@ end
 
 
 # j'attribue 1 à la variable résultat, afin que la première mutliplication soit égale au nombre donné
-# pour ensuite mutliplier ce nombre donné à lui même "exposant" fois
+# pour ensuite mutliplier ce nombre à lui même "exposant" fois

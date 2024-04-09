@@ -8,7 +8,7 @@ exposant = ARGV[1].to_i      # variable exposant contenant le deuxième élémen
 résultat = 1 
 
 
-if arguments.length != 2                            # si l'utilisateur n'entre rien ou + d'un argument 
+if arguments.length != 2                            # si l'utilisateur n'entre rien, ou + ou - de deux argument 
     puts "erreur : insérer seulement 2 arguments"   # affiche ce message d'erreur
 elsif ARGV[0] =~ /\D/ || ARGV[1] =~ /\D/            # si l'utilisateur entre autre chose que des nombres
     puts "erreur : insérer seulement des nombres"   # affiche ce message d'erreur

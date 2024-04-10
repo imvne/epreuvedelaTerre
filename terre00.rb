@@ -1,20 +1,10 @@
 #Alphabet
 
-alphabet = ["a","z","e","r","t","y","u","i","o","p","q","s","d","f","g","h","j","k","l","m","w","x","c","v","b","n"]
+lettre = "a"
 
-alphabet.sort!
-
-index_lettre = alphabet.index(alphabet[0])       # je met dans une variable l'index du premier élément
- 
-
- print alphabet[index_lettre]
-
-begin
-    index_lettre = index_lettre + 1              # je met dans la variable, la variable + 1
-    print alphabet[index_lettre]
-end while index_lettre != 25
-
+print lettre                    
+    until lettre == "z"                              # jusqu'à ce que la lettre suivante affichée soit z
+        lettre = lettre.succ                         # à chaque tour de la boucle on remplacera le contenu de la variable lettre par la lettre suivante de l'alphabet
+        print lettre                                 # à chaque tour de la boucle on affiche la lettre suivante
+    end  
 print "\n"
-
-
-

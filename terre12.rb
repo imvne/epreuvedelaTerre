@@ -1,9 +1,9 @@
 # 12 to 24
 
-argument = ARGV[0]                         # le format HH:MM est considéré comme une chaine de caractères, qui constitue un seul élément dans un tableau
+argument = ARGV[0]
 
 
-if argument =~ /^(\d{1,2}):(\d{2})(am|pm)$/i                 # si l'argument donné est deux nombres composés de 1 à 2 chiffres, séparés par deux points, et d'un am ou un pm
+if argument =~ /^(\d{1,2}):(\d{2})(am|pm)$/i                 # si l'argument donné est deux nombres composés de 1 à 2 chiffres (séparés par deux points) et d'un am ou un pm
     heures = $1.to_i                                         # attribue le premier nombre composé de 1 à 2 chiffres à la variable heures
     minutes = $2.to_i                                        # attribue le deuxième nombre composé de 2 chiffres à la variable minutes
     meridien = $3

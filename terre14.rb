@@ -7,8 +7,7 @@ mal_trie = false
 
 if arguments.length < 2                                                  # si moins de deux arguments donnés
     puts "erreur: insérer au moins deux arguments"                       # affiche ce message d'erreur
-elsif arguments =~ /\D/                                                  # si un des arguments contient autre chose que des nombres
-    puts "erreur: ne donner que des nombres"                             # affiche ce message d'erreur
+    
 elsif
     liste.each_with_index do |nombre, index|                             # pour chaque nombre de la liste, variable nombre et index stock temporairement le nombre et l'index
         break if index == liste.length - 2                               # arrête de traiter les nombres si on est rendu à l'avant dernier

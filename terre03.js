@@ -13,8 +13,7 @@ if (!letter) {
 } else if (!/^[a-zA-Z]+$/.test(letter)) {
   console.log("erreur : n'insérez rien d'autre qu'une lettre");
 } else if (/^[a-z]+$/.test(letter)) {
-  let codeAscii = letter.charCodeAt(0);
-  for (; codeAscii < 123; codeAscii++) {
+  for (let codeAscii = letter.charCodeAt(0); codeAscii < 123; codeAscii++) {
     alphabet += String.fromCharCode(codeAscii);
   }
   console.log(alphabet);
